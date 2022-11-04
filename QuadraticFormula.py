@@ -3,6 +3,11 @@ import matplotlib.pyplot as plt
 
 class QuadraticFormula:
 
+    """
+    This is the equation based of the Quadratic formula. It takes in 3 inputs
+    from the quadratic equation ax^2 + bx + c = 0. https://en.wikipedia.org/wiki/Quadratic_formula
+    """
+
     def solve(a, b, c):
 
         # Calculate the square root
@@ -29,4 +34,6 @@ class QuadraticFormula:
 
         return ans
 
-t = QuadraticFormula.solve(-4.9, 50, 0)
+print(
+    QuadraticFormula.solve(-4.9, 50, 0)
+)
