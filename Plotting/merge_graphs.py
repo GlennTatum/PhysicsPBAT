@@ -16,10 +16,11 @@ y = df['hit_distance_sc'].values.T
 
 plt.scatter(x, y, alpha=0.5)
 
-plt.twinx()
-
 z = df['launch_speed'].values.T
 
 plt.scatter(z, y, alpha=0.5)
 
+plt.minorticks_on()
+
+plt.tight_layout()
 plt.show()
